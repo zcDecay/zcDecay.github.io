@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>梦在这里腐了朽剩流泪</title>
+  <title>first blog | 梦在这里腐了朽剩流泪</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -66,8 +66,7 @@
 <body id="index" class="lightnav animsition">
 
       <!-- ============================ Off-canvas navigation =========================== -->
-
-    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling" >
         <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
             <img src="/img/close.png" alt="Close"/>
         </div>
@@ -89,6 +88,15 @@
             </li>
             
             
+        	<li>
+        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/categories/blog/" class="animsition-link">blog<small>(2)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
             
             <li>
                 <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
@@ -110,8 +118,20 @@
             <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
             <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
         </ul>
+
+<!-- 网易云音乐外链 -->
+    <iframe style="position: absolute; bottom: 0;" 
+         frameborder="no" 
+         border="0" 
+         marginwidth="0" 
+         marginheight="0" 
+         width=330 
+         height=86 
+         src="//music.163.com/outchain/player?type=2&id=36496695&auto=1&height=66">
+     </iframe>
+
     </div>
-    
+
     <!-- ============================ END Off-canvas navigation =========================== -->
 
     <!-- ============================ #sb-site Main Page Wrapper =========================== -->
@@ -181,16 +201,45 @@
           2018-06-19
       </time>
     
+    
+    | 
+    <a href='/tags/blog/'>blog</a>
+    
+    
+    <div style="margin-top:10px;">
+    <span class="post-time">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-keyboard-o"></i>
+        <span class="post-meta-item-text">  字数统计: </span>
+        <span class="post-count">117字</span>
+      </span>
+    </span>
+     
+    | 阅读量 : <span id="busuanzi_value_page_pv"></span>次<br>
+    </span>
+    
+</div>
 </span>
-                <h1></h1>
+                <h1>first blog</h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<hr>
-<h2 id="title-First-Night"><a href="#title-First-Night" class="headerlink" title=" title: First Night"></a> title: First Night</h2><blockquote>
-<p>我有一头<strong>小毛驴</strong>，可是我从来都不骑。</p>
-</blockquote>
-
+      		<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<pre><code>字数统计 : 
+&lt;span class=&quot;post-count&quot;&gt;&lt;%= wordcount(post.content) %&gt;&lt;/span&gt;
+阅读时长预计 :
+&lt;span class=&quot;post-count&quot;&gt;&lt;%= min2read(post.content) %&gt;分&lt;/span&gt;
+总字数统计 :
+&lt;span class=&quot;post-count&quot;&gt;&lt;%= totalcount(site) %&gt;&lt;/span&gt;
+</code></pre>
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
@@ -235,6 +284,12 @@
                 </p>
                 <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
             </div>
+
+            <!-- 添加建站时间 -->
+            <div class="clearfix text-center">
+            <span id="timeDate" >载入天数...</span><span  id="times">载入时分秒...</span><br>
+            </div>
+
             <div class="social">
                 <ul>
                     
@@ -254,7 +309,6 @@
                     
                 </ul>
             </div>
-            <div class="clearfix"> </div>
         </div>
 </footer>
 
@@ -279,9 +333,12 @@
 <script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
 <script src="/js/scripts.js"></script><!-- Theme scripts -->
 
-
 <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
 <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<!-- 不蒜子站点统计 -->
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 <script type="text/javascript">
 $('#intro').find('img').each(function(){
   var alt = this.alt;
@@ -295,6 +352,22 @@ $('#intro').find('img').each(function(){
 (function($){
   $('.fancybox').fancybox();
 })(jQuery);
+
+//网站建站时间
+var now = new Date(); 
+function createtime() { 
+    var grt= new Date("06/22/2018 15:52:00");//此处修改你的建站时间或者网站上线时间 
+    now.setTime(now.getTime()+250); 
+    days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+    hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+    if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+    mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+    seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+    snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+    document.getElementById("timeDate").innerHTML = "decay的博客已运行 "+dnum+" 天 "; 
+    document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+} 
+setInterval("createtime()",250);
 </script>
 
 
