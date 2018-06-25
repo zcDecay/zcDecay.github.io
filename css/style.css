@@ -145,6 +145,10 @@ section {
 	padding-top: 60px;
 	z-index: 4;
 }
+section.intro{
+	position: static;
+	padding-top: 0px;
+}
 a,
 a:hover,
 a:active,
@@ -946,9 +950,9 @@ span.sb-caret { /* Caret Down */
 	height:400px;
 	z-index: 3;
 }
-.clearfix{
+.createSites{
 	position: absolute;
-	bottom: 10px;
+    bottom: 70px;
 	left: 0;
 	right: 0;
 }

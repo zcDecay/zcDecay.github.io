@@ -159,6 +159,10 @@ section {
 	padding-top: 60px;
 	z-index: 4;
 }
+section.intro{
+	position: static;
+	padding-top: 0px;
+}
 a,
 a:hover,
 a:active,
@@ -960,9 +964,9 @@ span.sb-caret { /* Caret Down */
 	height:400px;
 	z-index: 3;
 }
-.clearfix{
+.createSites{
 	position: absolute;
-	bottom: 10px;
+    bottom: 70px;
 	left: 0;
 	right: 0;
 }
@@ -3553,9 +3557,12 @@ pre .deletion {
   color: #dc322f;
 }
 @charset "utf-8";
-/*#hero p {
-	color: #fff;
-}
-#hero h2 {
-	color: #fff;
+/*添加豆瓣书籍样式*/
+/*.readState{
+	font-size: 12px;
+	color: gray;
+	border: 1px solid gray; 
+	cursor: pointer; 
+	text-align: center;
+	border-radius: 20px;
 }*/
