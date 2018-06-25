@@ -960,6 +960,12 @@ span.sb-caret { /* Caret Down */
 	height:400px;
 	z-index: 3;
 }
+.clearfix{
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+}
 
 /* *******************************************************
 * Simple Header (privacy-policy.html, terms-conditions.html etc)
@@ -3394,7 +3400,9 @@ nav.pagination {
   overflow: hidden;
   opacity: 0;
 }
-
+#comments{
+	clear: both;
+}
 .entry .gist {
   background: #eee;
   border: 1px solid color-border;

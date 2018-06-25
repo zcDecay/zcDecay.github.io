@@ -46,3 +46,6 @@
   overflow: hidden;
   opacity: 0;
 }
+#comments{
+	clear: both;
+}

@@ -119,16 +119,12 @@
             <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
         </ul>
 
-<!-- 网易云音乐外链 -->
-    <iframe style="position: absolute; bottom: 0;" 
-         frameborder="no" 
-         border="0" 
-         marginwidth="0" 
-         marginheight="0" 
-         width=330 
-         height=86 
-         src="//music.163.com/outchain/player?type=2&id=36496695&auto=1&height=66">
-     </iframe>
+        <!-- 添加建站时间 -->
+        <div  class="clearfix text-center">
+        <span id="timeDate" >载入天数...</span><span  id="times">载入时分秒...</span><br>
+        </div>
+
+ 
 
     </div>
 
@@ -250,7 +246,7 @@
 <!--Leancloud 操作库:-->
 <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
 <!--Valine 的核心代码库:-->
-<script src="https://cdn.jsdelivr.net/npm/valine@1.1.9-beta9/dist/Valine.min.js"></script> 
+<script src="//unpkg.com/valine@1.1.9/dist/Valine.min.js"></script> 
 <script type="text/javascript">
     new Valine({
             // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
@@ -278,12 +274,6 @@
                 </p>
                 <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
             </div>
-
-            <!-- 添加建站时间 -->
-            <div class="clearfix text-center">
-            <span id="timeDate" >载入天数...</span><span  id="times">载入时分秒...</span><br>
-            </div>
-
             <div class="social">
                 <ul>
                     
@@ -358,7 +348,7 @@ function createtime() {
     mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
     seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
     snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-    document.getElementById("timeDate").innerHTML = "decay的博客已运行 "+dnum+" 天 "; 
+    document.getElementById("timeDate").innerHTML = "已运行 "+dnum+" 天 "; 
     document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
 } 
 setInterval("createtime()",250);
