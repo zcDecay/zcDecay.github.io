@@ -8,3 +8,24 @@
 	text-align: center;
 	border-radius: 20px;
 }*/
+/*全局重要链接颜色*/
+.globalColor{
+	color: #7260ff
+}
+/*读书状态*/
+.bookReadState{
+	 font-size: 12px;
+	 color: gray;
+	 border: 2px solid gray; 
+	 cursor: pointer; 
+	 text-align: center;
+	 border-radius: 20px;
+}
+/*博主去读书*/
+.goBook{
+	text-align: center;
+	border: 2px solid gray;
+	border-radius: 20px;
+	height: 500px;d
+	isplay: none;
+}

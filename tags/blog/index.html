@@ -92,6 +92,8 @@
         		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
             	<ul class="sb-submenu">
 				  	
+				    <li><a href="/categories/about/" class="animsition-link">about<small>(1)</small></a></li>
+				    
 				    <li><a href="/categories/blog/" class="animsition-link">blog<small>(2)</small></a></li>
 				    
 				</ul>
@@ -264,9 +266,9 @@
     <div class="container">
             <div class="copy">
                 <p>
-                    &copy; 2018<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By decay. All Rights Reserved.
+                    &copy; 2018<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By <span class="globalColor">decay</span>. All Rights Reserved.
                 </p>
-                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+                <p>Theme By <a href="//go.kieran.top" style="color:#7260ff;">Kieran</a></p>
             </div>
             <div class="social">
                 <ul>
@@ -310,24 +312,27 @@
         resizeHero();
     });
 </script>
-<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
-<script src="/js/scripts.js"></script><!-- Theme scripts -->
+<script src="//pax1y6mhm.bkt.clouddn.com/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="//pax1y6mhm.bkt.clouddn.com/scripts.js"></script><!-- Theme scripts -->
 
 <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
 <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 <!-- 不蒜子站点统计 -->
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script async src="//pax1y6mhm.bkt.clouddn.com/blog/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 <!-- 添加点击鼠标特效-->
 <!-- <script type="text/javascript" src="/js/love.js"></script> -->
+<!-- <script type="text/javascript" src="//pax1y6mhm.bkt.clouddn.com/blog/js/love.js"></script> -->
 
+<!-- 点击页面出现鼠标特效 -->
+<script type="text/javascript" src="//pax1y6mhm.bkt.clouddn.com/blog/js/click.js"></script>
 <!--崩溃欺骗-->
-<script type="text/javascript" src="/js/crash_cheat.js"></script>
+<script type="text/javascript" src="//pax1y6mhm.bkt.clouddn.com/crash_cheat.js"></script>
 
 <!-- 添加音乐播放 -->
-<link rel="stylesheet" href="/dist/APlayer.min.css">
-<script type="text/javascript" src="/dist/APlayer.min.js"></script>
+<link rel="stylesheet" href="//pax1y6mhm.bkt.clouddn.com/blog/js/APlayer.min.css">
+<script type="text/javascript" src="//pax1y6mhm.bkt.clouddn.com/blog/js/APlayer.min.js"></script>
 <script type="text/javascript" src="/dist/music.js"></script>
 
 <script type="text/javascript">
@@ -377,7 +382,6 @@ $('.state3').click(function(){
     if($(".read").length == '0'){
         $(".goBook").show();
     }
-
 })
 })(jQuery);
 
@@ -397,35 +401,6 @@ function createtime() {
 } 
 setInterval("createtime()",250);
 </script>
-<!-- 网页点击特效 -->
-<script type="text/javascript">
-var a_idx = 0; 
-
- $("body").click(function(e) { 
- var a = new Array("梦", "在", "这", "里", "腐", "了", "朽" ,"剩", "流", "泪"); 
- var $i = $("<span/>").text(a[a_idx]); 
- a_idx = (a_idx + 1) % a.length; 
- var x = e.pageX, 
- y = e.pageY; 
- $i.css({ 
- "z-index": 99999, 
- "top": y - 20, 
- "left": x, 
- "position": "absolute", 
- "font-weight": "bold", 
- "color": "#dadcdd"
- }); 
- $("body").append($i); 
- $i.animate({ 
- "top": y - 180, 
- "opacity": 0 
- }, 
- 1500, 
- function() { 
- $i.remove(); 
- }); 
- }); 
-</script>
 
 <!-- 添加匿名客服聊天 -->
 <script>
@@ -434,6 +409,17 @@ daovoice('init', {
   app_id: "7443fe6c"
 });
 daovoice('update');
+
+<!-- 移动到图书的状态上,改变颜色 -->
+function moveColor(e){
+    e.style.backgroundColor = 'gray';
+    e.style.color = 'white';
+}
+<!-- 走开图书的状态上,改变颜色 -->
+function recoveryColor(e){
+    e.style.backgroundColor = 'white';
+    e.style.color = 'gray';
+}
 </script>
 
 </script>
@@ -550,7 +536,8 @@ daovoice('update');
   </div>
 </div>
 
-<script src="/js/ziploader.js"></script>
+<!-- <script src="/js/ziploader.js"></script> -->
+<script src="//pax1y6mhm.bkt.clouddn.com/ziploader.js"></script>
 
 
   <script type="text/javascript">

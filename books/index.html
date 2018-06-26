@@ -92,6 +92,8 @@
         		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
             	<ul class="sb-submenu">
 				  	
+				    <li><a href="/categories/about/" class="animsition-link">about<small>(1)</small></a></li>
+				    
 				    <li><a href="/categories/blog/" class="animsition-link">blog<small>(2)</small></a></li>
 				    
 				</ul>
@@ -194,14 +196,14 @@
                 <h1>decay的阅读</h1>
             </div>
             <!-- 豆瓣读书状态 -->
-            <div class="col-md-1 bookReadState state1">
-              <p style=" font-size: 12px;color: gray;border: 1px solid gray; cursor: pointer; text-align: center;border-radius: 20px;">想读</p>
+            <div class="col-md-1  state1">
+              <p  class="bookReadState" onmousemove="moveColor(this)" onMouseOut="recoveryColor(this)">想读</p>
             </div>
-            <div class="col-md-1 bookReadState state2">
-              <p style=" font-size: 12px;color: gray;border: 1px solid gray; cursor: pointer;  text-align: center;border-radius: 20px;">在读</p>
+            <div class="col-md-1 state2">
+              <p  class="bookReadState" onmousemove="moveColor(this)" onMouseOut="recoveryColor(this)">在读</p>
             </div>
-            <div class="col-md-1 bookReadState state3">
-              <p style=" font-size: 12px;color: gray;border: 1px solid gray;  cursor: pointer; text-align: center;border-radius: 20px;">已读</p>
+            <div class="col-md-1 state3">
+              <p  class="bookReadState"  onmousemove="moveColor(this)" onMouseOut="recoveryColor(this)">已读</p>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
@@ -213,14 +215,14 @@
 靖子与女儿相依为命，失手杀了前来纠缠的前夫。石神提出由他料理善后。石神设了一个匪夷所思的局，令警方始终只能在外围敲敲打打，根本无法与案子沾边。石神究竟使用了什么手法？</li></ul></section></article><hr><style>.leisure{width:100%;min-height:130px;margin:20px 0;display:block;clear:both}.leisure img{width:128px;height:182px;float:left;background-color:white;padding:5px;border-radius:5px;border:1px solid #dedede;margin:-5px 10px 5px 0}.leisure .intro{margin:5px 10px 5px 0;width:100%}.leisure .intro ul{list-style:none;margin-left:0;}.leisure .intro ul li{line-height:20px;margin: 10px 0;}.leisure .intro ul li:first-child{font-size:20px;padding-bottom:5px;margin-bottom:10px;border-bottom:1px #eee solid}.leisure .intro ul li:before{content:none}</style>
             <div class="clearfix"></div>
         </div>
-        <div class="col-md-8 col-md-offset-2 goBook" style="text-align: center;border: 1px solid gray;border-radius: 20px;height: 500px;display: none;">
+        <div class="col-md-8 col-md-offset-2 goBook">
            <a href="#">博主还没有其他的书></a>
         </div>
         <div class="col-md-8 col-md-offset-2 col-sm-24"><div class="comments" id="comments"></div>
 <!--Leancloud 操作库:-->
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//pax1y6mhm.bkt.clouddn.com/blog/leancloud/3.0.4/av-min.js"></script>
 <!--Valine 的核心代码库:-->
-<script src="//unpkg.com/valine@1.1.9/dist/Valine.min.js"></script> 
+<script src="//pax1y6mhm.bkt.clouddn.com/blog/valine/1.1.9/valine.min.js"></script> 
 <script type="text/javascript">
     new Valine({
             // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
@@ -244,9 +246,9 @@
     <div class="container">
             <div class="copy">
                 <p>
-                    &copy; 2018<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By decay. All Rights Reserved.
+                    &copy; 2018<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By <span class="globalColor">decay</span>. All Rights Reserved.
                 </p>
-                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+                <p>Theme By <a href="//go.kieran.top" style="color:#7260ff;">Kieran</a></p>
             </div>
             <div class="social">
                 <ul>
@@ -290,24 +292,27 @@
         resizeHero();
     });
 </script>
-<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
-<script src="/js/scripts.js"></script><!-- Theme scripts -->
+<script src="//pax1y6mhm.bkt.clouddn.com/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="//pax1y6mhm.bkt.clouddn.com/scripts.js"></script><!-- Theme scripts -->
 
 <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
 <script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 <!-- 不蒜子站点统计 -->
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script async src="//pax1y6mhm.bkt.clouddn.com/blog/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 <!-- 添加点击鼠标特效-->
 <!-- <script type="text/javascript" src="/js/love.js"></script> -->
+<!-- <script type="text/javascript" src="//pax1y6mhm.bkt.clouddn.com/blog/js/love.js"></script> -->
 
+<!-- 点击页面出现鼠标特效 -->
+<script type="text/javascript" src="//pax1y6mhm.bkt.clouddn.com/blog/js/click.js"></script>
 <!--崩溃欺骗-->
-<script type="text/javascript" src="/js/crash_cheat.js"></script>
+<script type="text/javascript" src="//pax1y6mhm.bkt.clouddn.com/crash_cheat.js"></script>
 
 <!-- 添加音乐播放 -->
-<link rel="stylesheet" href="/dist/APlayer.min.css">
-<script type="text/javascript" src="/dist/APlayer.min.js"></script>
+<link rel="stylesheet" href="//pax1y6mhm.bkt.clouddn.com/blog/js/APlayer.min.css">
+<script type="text/javascript" src="//pax1y6mhm.bkt.clouddn.com/blog/js/APlayer.min.js"></script>
 <script type="text/javascript" src="/dist/music.js"></script>
 
 <script type="text/javascript">
@@ -357,7 +362,6 @@ $('.state3').click(function(){
     if($(".read").length == '0'){
         $(".goBook").show();
     }
-
 })
 })(jQuery);
 
@@ -377,35 +381,6 @@ function createtime() {
 } 
 setInterval("createtime()",250);
 </script>
-<!-- 网页点击特效 -->
-<script type="text/javascript">
-var a_idx = 0; 
-
- $("body").click(function(e) { 
- var a = new Array("梦", "在", "这", "里", "腐", "了", "朽" ,"剩", "流", "泪"); 
- var $i = $("<span/>").text(a[a_idx]); 
- a_idx = (a_idx + 1) % a.length; 
- var x = e.pageX, 
- y = e.pageY; 
- $i.css({ 
- "z-index": 99999, 
- "top": y - 20, 
- "left": x, 
- "position": "absolute", 
- "font-weight": "bold", 
- "color": "#dadcdd"
- }); 
- $("body").append($i); 
- $i.animate({ 
- "top": y - 180, 
- "opacity": 0 
- }, 
- 1500, 
- function() { 
- $i.remove(); 
- }); 
- }); 
-</script>
 
 <!-- 添加匿名客服聊天 -->
 <script>
@@ -414,6 +389,17 @@ daovoice('init', {
   app_id: "7443fe6c"
 });
 daovoice('update');
+
+<!-- 移动到图书的状态上,改变颜色 -->
+function moveColor(e){
+    e.style.backgroundColor = 'gray';
+    e.style.color = 'white';
+}
+<!-- 走开图书的状态上,改变颜色 -->
+function recoveryColor(e){
+    e.style.backgroundColor = 'white';
+    e.style.color = 'gray';
+}
 </script>
 
 </script>
@@ -530,7 +516,8 @@ daovoice('update');
   </div>
 </div>
 
-<script src="/js/ziploader.js"></script>
+<!-- <script src="/js/ziploader.js"></script> -->
+<script src="//pax1y6mhm.bkt.clouddn.com/ziploader.js"></script>
 
 
   <script type="text/javascript">
