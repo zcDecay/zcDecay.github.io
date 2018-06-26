@@ -1,7 +1,7 @@
 const ap = new APlayer({
     container: document.getElementById('aplayer'),
     fixed: true,
-    autoplay: false,
+    theme: '#e9e9e9',
     audio: [
       {
         name: "love yourself",
