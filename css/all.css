@@ -3340,7 +3340,7 @@ footer .footer_bottom {
 /* Import the font file with the icons in it */
 @font-face { font-family: 'icons'; src:  url('../fonts/icons.woff') format('woff'); font-weight: normal; font-style: normal; }
 /* Apply these base styles to all icons */
-.icon-Favorites:before,.icon-newspaper:before,.icon-logo:before,.icon-dice:before,.icon-feed:before, .icon-twitter:before, .icon-google-plus:before, .icon-facebook:before, .icon-sina-weibo, .icon-github{ font-family: 'icons'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; text-decoration: none; }
+.icon-heart-broken:before,.icon-attachment:before,.icon-cool:before,.icon-heart:before,.icon-vimeo2:before,.icon-book:before,.icon-twitter:before, .icon-google-plus:before, .icon-facebook:before, .icon-sina-weibo, .icon-github{ font-family: 'icons'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; -webkit-font-smoothing: antialiased; text-decoration: none; }
 /* Each icon is created by inserting the corret character into the
    content of the :before pseudo element. Like a boss. */
 .icon-feed:before { content: "\e631"; }
@@ -3349,8 +3349,12 @@ footer .footer_bottom {
 .icon-facebook:before { content: "\e62f"; }
 .icon-sina-weibo:before { content: "\e666"; }
 .icon-github:before { content: "\e636"; }
-.icon-Favorites:before { content: "\e600"; }.icon-logo:before { content: "\e608"; }
-.icon-newspaper:before { content: "\e609"; }.icon-dice:before { content: "\e60a"; }
+.icon-book:before { content: "\e60c"; }
+.icon-vimeo2:before { content: "\e632"; }
+.icon-heart:before { content: "\e61d"; }
+.icon-cool:before { content: "\e625"; }
+.icon-attachment:before { content: "\e617"; }
+.icon-heart-broken:before { content: "\e61e"; }
 /*---------------- END ------------------------*/
 
 nav.pagination {
