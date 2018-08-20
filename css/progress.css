@@ -1,0 +1,11 @@
+.pace .pace-progress {
+	background: #737373; /*��������ɫ*/
+	height: 3px;
+}
+.pace .pace-progress-inner {
+	 box-shadow: 0 0 10px #737373, 0 0 5px     #737373; /*��Ӱ��ɫ*/
+}
+.pace .pace-activity {
+	border-top-color: #737373;    /*�ϱ߿���ɫ*/
+	border-left-color: #737373;    /*��߿���ɫ*/
+}
